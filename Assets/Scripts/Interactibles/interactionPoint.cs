@@ -2,13 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class interactionPoint : MonoBehaviour
+public abstract class interactionPoint : MonoBehaviour
 {
-    public void interact(){
-        Debug.Log("Ouch");
-    }
+    public abstract void interact();
 
     private void OnDrawGizmos() {
         Gizmos.DrawWireSphere(transform.position, .25f);
     }
 }
+

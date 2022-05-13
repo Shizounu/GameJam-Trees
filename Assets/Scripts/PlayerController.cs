@@ -2,12 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum HoldStateEnum{
+    Nothing,
+    Bowl,
+    Water
+}
+
 [SelectionBase]
 public class PlayerController : MonoBehaviour
 {
     [Header("Stats")]
     public float speed = 3;
     public float interactionReach = 1;
+    
+    [Header("Interactable State")]
+    public HoldStateEnum holdState = HoldStateEnum.Nothing;
+
+    
+    
     [Header("References")]
     public Rigidbody rb;
     InputController input;
@@ -23,8 +35,11 @@ public class PlayerController : MonoBehaviour
             interact();
             input.interactionFlag = false;
         }
+        if(input.clearHandFlag){
+            holdState = HoldStateEnum.Nothing;
+            input.clearHandFlag = false;
+        }
     }
-
     void interact(){
         interactionPoint[] interactionPoints = FindObjectsOfType<interactionPoint>();
         interactionPoint closestInRange = null;

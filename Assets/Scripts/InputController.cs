@@ -21,6 +21,9 @@ public class InputController : MonoBehaviour
         inputActions.Player.Move.canceled += _ => dir = Vector2.zero;
 
         inputActions.Player.Interact.performed += _ => interactionFlag = true;
+        inputActions.Player.ClearHand.performed += _ => clearHandFlag = true;
+
+
     }
 
     private void OnEnable() {
@@ -33,4 +36,5 @@ public class InputController : MonoBehaviour
     [Header("Input Info")]
     public Vector2 dir;
     public bool interactionFlag = false;
+    public bool clearHandFlag = false;
 }
