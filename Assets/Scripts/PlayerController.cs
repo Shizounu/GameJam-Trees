@@ -5,7 +5,8 @@ using UnityEngine;
 public enum HoldStateEnum{
     Nothing,
     Bowl,
-    Water
+    Water,
+    TreeBomb
 }
 
 [SelectionBase]

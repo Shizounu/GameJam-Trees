@@ -1,0 +1,201 @@
+fileFormatVersion: 2
+guid: 251f647efa9db12409d1c1d9780b9e87
+ModelImporter:
+  serializedVersion: 21202
+  internalIDToNameTable:
+  - first:
+      74: -4057567767072900857
+    second: Water_Drops_4.001|SphereAction
+  - first:
+      74: -7284295165860541356
+    second: Water_Drops_4.001|SphereAction.001
+  - first:
+      74: -2429205455970509494
+    second: Water_Drops_4.001|SphereAction.002
+  - first:
+      74: 6232004801740888155
+    second: Water_Drops_4.001|SphereAction.003
+  - first:
+      74: 2057196111358439456
+    second: Water_Drops_4.001|SphereAction.004
+  - first:
+      74: -5767773701315113369
+    second: Water_Drops_4.001|SphereAction.005
+  - first:
+      74: -611577743357949261
+    second: Water_Drops_4.001|SphereAction.006
+  - first:
+      74: 3440282893315091441
+    second: Water_Drops_4.001|SphereAction.007
+  - first:
+      74: -4269955545835192660
+    second: Water_Drops_4.001|SphereAction.008
+  - first:
+      74: -5693600490109663557
+    second: Water_Drops_4.001|SphereAction.009
+  - first:
+      74: 8722916737887925993
+    second: Water_Drops_4.001|SphereAction.010
+  - first:
+      74: -9005310615707819115
+    second: Water_Drops_4.001|SphereAction.011
+  - first:
+      74: 5638874953940968556
+    second: Water_Drops_4.001|SphereAction.012
+  - first:
+      74: 3534051941027067527
+    second: Water_Drops_4.001|SphereAction.013
+  - first:
+      74: 2493518140435660875
+    second: Water_Drops_4.001|SphereAction.014
+  - first:
+      74: 365171338341128142
+    second: Water_Drops_4.001|SphereAction.015
+  - first:
+      74: 5126583251728127243
+    second: Water_Drops_4.001|SphereAction.016
+  - first:
+      74: -9036946076306941793
+    second: Water_Drops_4.001|SphereAction.017
+  - first:
+      74: 554565731788001281
+    second: Water_Drops_4.001|SphereAction.018
+  - first:
+      74: 240711518834637573
+    second: Water_Drops_4.001|SphereAction.019
+  - first:
+      74: -5191075748409335905
+    second: Water_Drops_4.001|SphereAction.020
+  - first:
+      74: -1214865132783131593
+    second: Water_Drops_4.001|SphereAction.021
+  - first:
+      74: -4443998235529926203
+    second: Water_Drops_4.001|SphereAction.022
+  - first:
+      74: -3952000316570478976
+    second: Water_Drops_4.001|SphereAction.023
+  - first:
+      74: 1011646804166938875
+    second: Water_Drops_4.001|SphereAction.024
+  - first:
+      74: -9089654988521380024
+    second: Water_Drops_4.001|SphereAction.025
+  - first:
+      74: -3916035912443312406
+    second: Water_Drops_4.001|SphereAction.026
+  - first:
+      74: -3893046433059111690
+    second: Water_Drops_4.001|SphereAction.027
+  - first:
+      74: -5366565981521047134
+    second: Water_Drops_4.001|SphereAction.028
+  - first:
+      74: 378654331629937322
+    second: Water_Drops_4.001|SphereAction.029
+  - first:
+      74: 4149483900199991167
+    second: Water_Drops_4.001|SphereAction.030
+  - first:
+      74: 358584896009140395
+    second: Water_Drops_4.001|Water_LiquidAction
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
