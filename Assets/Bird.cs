@@ -10,6 +10,7 @@ public class Bird : MonoBehaviour
     private void OnTriggerEnter(Collider other) {
         if(other.tag == "Player"){
             Instantiate(poopPrefab, spawnPoint.position,spawnPoint.rotation);
+            Destroy(this.gameObject);
         }
     }
 }

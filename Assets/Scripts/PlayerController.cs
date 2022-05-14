@@ -8,7 +8,8 @@ public enum HoldStateEnum{
     Water,
     TreeBomb,
     Seed,
-    Sapling
+    Sapling,
+    Fertilizer
 }
 
 [SelectionBase]
