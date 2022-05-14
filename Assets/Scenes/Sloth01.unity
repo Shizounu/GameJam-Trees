@@ -806,7 +806,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1061586641}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: ee21f7d08c62e714597632e5c86f388f, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -851,7 +851,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1118043434}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: ee21f7d08c62e714597632e5c86f388f, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -1047,7 +1047,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1536901947}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: ee21f7d08c62e714597632e5c86f388f, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -1140,7 +1140,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1961185675}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: ee21f7d08c62e714597632e5c86f388f, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -1254,7 +1254,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 672d557a96bfe8142820a6af117d309d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 750
   interactionReach: 2
   holdState: 0
   rb: {fileID: 2115335101}
@@ -1266,7 +1266,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2115335098}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -52, y: -17.099998, z: -3.0500002}
+  m_LocalPosition: {x: -42.75, y: 6.83, z: -8.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1289,7 +1289,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 112
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!135 &2115335102
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1297,7 +1297,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2115335098}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: ee21f7d08c62e714597632e5c86f388f, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2

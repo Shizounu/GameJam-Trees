@@ -31,10 +31,6 @@ public class PlayerController : MonoBehaviour
         input = InputController.Instance;
     }
     private void Update() {
-        Vector3 movement = transform.position + new Vector3(input.dir.x, 0, input.dir.y) * Time.deltaTime * speed;
-        rb.MovePosition(movement);
-
-
         if(input.interactionFlag){
             interact();
             input.interactionFlag = false;
@@ -43,6 +39,12 @@ public class PlayerController : MonoBehaviour
             holdState = HoldStateEnum.Nothing;
             input.clearHandFlag = false;
         }
+    }
+
+    private void FixedUpdate() {
+        Vector3 movement = new Vector3(input.dir.x, 0, input.dir.y) * Time.fixedDeltaTime * speed;
+        rb.velocity = (movement) + new Vector3(0,rb.velocity.y,0);
+
     }
     void interact(){
         interactionPoint[] interactionPoints = FindObjectsOfType<interactionPoint>();
