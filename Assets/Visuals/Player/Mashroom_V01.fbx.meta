@@ -1,9 +1,32 @@
 fileFormatVersion: 2
-guid: ee2420411a1e5a2478c9ca0039e56cf6
+guid: f7ea56e22c22eaf4f8dc12be10fdbfdf
 ModelImporter:
   serializedVersion: 21202
-  internalIDToNameTable: []
-  externalObjects: {}
+  internalIDToNameTable:
+  - first:
+      74: 1827226128182048838
+    second: Take 001
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mushroom_Body
+    second: {fileID: 2100000, guid: b077794fb20bb654190764851ae2ffd8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mushroom_Cap_Red
+    second: {fileID: 2100000, guid: 10ef2bbd00ec56d429e03f44d69a74c8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mushroom_Cap_White
+    second: {fileID: 2100000, guid: 592cd47cd7d48a24a9642af74e160c45, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mushroom_Eyes
+    second: {fileID: 2100000, guid: f523c654f53efe649938785a011ed06b, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -56,7 +79,7 @@ ModelImporter:
     skinWeightsMode: 0
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
-    optimizeBones: 1
+    optimizeBones: 0
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
