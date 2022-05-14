@@ -1,0 +1,189 @@
+fileFormatVersion: 2
+guid: 315246cb41871e4418f69996fc038f44
+ModelImporter:
+  serializedVersion: 21202
+  internalIDToNameTable:
+  - first:
+      74: 328967875815008298
+    second: Wing_R|Seed_V2.003Action
+  - first:
+      74: 8996340272906891804
+    second: Wing_R|SphereAction
+  - first:
+      74: 2927824353871996954
+    second: Wing_R|SphereAction.014
+  - first:
+      74: -8483508041484126106
+    second: Wing_R|SphereAction.016
+  - first:
+      74: -3494700150033736475
+    second: Wing_R|SphereAction.018
+  - first:
+      74: -8573801457334986384
+    second: Wing_R|SphereAction.020
+  - first:
+      74: 3797453490152518431
+    second: Wing_R|SphereAction.022
+  - first:
+      74: -5081243786780006487
+    second: Wing_R|SphereAction.024
+  - first:
+      74: -3372542196450662704
+    second: Wing_R|SphereAction.026
+  - first:
+      74: 201034117978456134
+    second: Wing_R|SphereAction.028
+  - first:
+      74: 4465845392418400290
+    second: Wing_R|SphereAction.030
+  - first:
+      74: -5774321310610102109
+    second: Wing_R|Water_LiquidAction
+  - first:
+      74: 3678680510969899473
+    second: Wing_R|Wing_LAction
+  - first:
+      74: 500978085581634324
+    second: Wing_R|Wing_RAction
+  - first:
+      74: 1997863591660461399
+    second: Wing_L|Seed_V2.003Action
+  - first:
+      74: -8112620970616238794
+    second: Wing_L|SphereAction
+  - first:
+      74: 2453057410063023903
+    second: Wing_L|SphereAction.014
+  - first:
+      74: 5812064489722798176
+    second: Wing_L|SphereAction.016
+  - first:
+      74: 7101409355095458833
+    second: Wing_L|SphereAction.018
+  - first:
+      74: -6118084230203979025
+    second: Wing_L|SphereAction.020
+  - first:
+      74: 8657230944917421883
+    second: Wing_L|SphereAction.022
+  - first:
+      74: -4478555291693468006
+    second: Wing_L|SphereAction.024
+  - first:
+      74: -4891976594639041050
+    second: Wing_L|SphereAction.026
+  - first:
+      74: -7138007151238600343
+    second: Wing_L|SphereAction.028
+  - first:
+      74: -4052215001520172818
+    second: Wing_L|SphereAction.030
+  - first:
+      74: -3823602226095549035
+    second: Wing_L|Water_LiquidAction
+  - first:
+      74: 3853858915245045157
+    second: Wing_L|Wing_LAction
+  - first:
+      74: -969062729192423997
+    second: Wing_L|Wing_RAction
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 0
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
