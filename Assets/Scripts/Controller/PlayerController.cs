@@ -27,6 +27,7 @@ public class PlayerController : MonoBehaviour
     [Header("References")]
     public Rigidbody rb;
     InputController input;
+    public Transform visualTransform;
     private void Start() {
         input = InputController.Instance;
     }
@@ -44,8 +45,10 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate() {
         Vector3 movement = new Vector3(input.dir.x, 0, input.dir.y) * Time.fixedDeltaTime * speed;
         rb.velocity = (movement) + new Vector3(0,rb.velocity.y,0);
-
+        visualTransform.LookAt(transform.position + new Vector3(input.dir.x, 0, input.dir.y));
+        
     }
+    
     void interact(){
         interactionPoint[] interactionPoints = FindObjectsOfType<interactionPoint>();
         interactionPoint closestInRange = null;
