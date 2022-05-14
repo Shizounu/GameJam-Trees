@@ -6,7 +6,9 @@ public enum HoldStateEnum{
     Nothing,
     Bowl,
     Water,
-    TreeBomb
+    TreeBomb,
+    Seed,
+    Sapling
 }
 
 [SelectionBase]

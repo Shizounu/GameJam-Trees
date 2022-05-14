@@ -23,7 +23,8 @@ public class InputController : MonoBehaviour
         inputActions.Player.Interact.performed += _ => interactionFlag = true;
         inputActions.Player.ClearHand.performed += _ => clearHandFlag = true;
 
-
+        inputActions.Player.CameraMovement.performed += ctx => mouseMovement = ctx.ReadValue<Vector2>();
+        inputActions.Player.CameraMovement.canceled += ctx => mouseMovement = Vector2.zero;
     }
 
     private void OnEnable() {
@@ -37,4 +38,6 @@ public class InputController : MonoBehaviour
     public Vector2 dir;
     public bool interactionFlag = false;
     public bool clearHandFlag = false;
+
+    public Vector2 mouseMovement;
 }

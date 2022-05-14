@@ -53,6 +53,15 @@ public partial class @Input : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""CameraMovement"",
+                    ""type"": ""Value"",
+                    ""id"": ""735a8ad2-1dbc-4921-bcdf-fa33fab477f1"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
@@ -132,6 +141,17 @@ public partial class @Input : IInputActionCollection2, IDisposable
                     ""action"": ""Clear Hand"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""66d5d2bb-425e-4110-a2be-511ad043fef8"",
+                    ""path"": ""<Pointer>/delta"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Mouse and Keyboard"",
+                    ""action"": ""CameraMovement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -160,6 +180,7 @@ public partial class @Input : IInputActionCollection2, IDisposable
         m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
         m_Player_Interact = m_Player.FindAction("Interact", throwIfNotFound: true);
         m_Player_ClearHand = m_Player.FindAction("Clear Hand", throwIfNotFound: true);
+        m_Player_CameraMovement = m_Player.FindAction("CameraMovement", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -222,6 +243,7 @@ public partial class @Input : IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Move;
     private readonly InputAction m_Player_Interact;
     private readonly InputAction m_Player_ClearHand;
+    private readonly InputAction m_Player_CameraMovement;
     public struct PlayerActions
     {
         private @Input m_Wrapper;
@@ -229,6 +251,7 @@ public partial class @Input : IInputActionCollection2, IDisposable
         public InputAction @Move => m_Wrapper.m_Player_Move;
         public InputAction @Interact => m_Wrapper.m_Player_Interact;
         public InputAction @ClearHand => m_Wrapper.m_Player_ClearHand;
+        public InputAction @CameraMovement => m_Wrapper.m_Player_CameraMovement;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -247,6 +270,9 @@ public partial class @Input : IInputActionCollection2, IDisposable
                 @ClearHand.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnClearHand;
                 @ClearHand.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnClearHand;
                 @ClearHand.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnClearHand;
+                @CameraMovement.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCameraMovement;
+                @CameraMovement.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCameraMovement;
+                @CameraMovement.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCameraMovement;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -260,6 +286,9 @@ public partial class @Input : IInputActionCollection2, IDisposable
                 @ClearHand.started += instance.OnClearHand;
                 @ClearHand.performed += instance.OnClearHand;
                 @ClearHand.canceled += instance.OnClearHand;
+                @CameraMovement.started += instance.OnCameraMovement;
+                @CameraMovement.performed += instance.OnCameraMovement;
+                @CameraMovement.canceled += instance.OnCameraMovement;
             }
         }
     }
@@ -278,5 +307,6 @@ public partial class @Input : IInputActionCollection2, IDisposable
         void OnMove(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
         void OnClearHand(InputAction.CallbackContext context);
+        void OnCameraMovement(InputAction.CallbackContext context);
     }
 }

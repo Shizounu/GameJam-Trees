@@ -7,7 +7,7 @@ public class Combiner : interactionPoint
     [Header("Object Flags")]
     public bool hasWater;
     public bool hasFertilizer;
-    public bool hasSeed;
+    public bool hasSapling;
 
     [Header("references")]
     public GameObject treeBombPrefab;
@@ -16,15 +16,20 @@ public class Combiner : interactionPoint
     {
         if(GameController.Instance.player.holdState == HoldStateEnum.Water){
             hasWater  = true;
+            GameController.Instance.player.holdState = HoldStateEnum.Nothing;
+        }
+        if(GameController.Instance.player.holdState == HoldStateEnum.Sapling){
+            hasSapling  = true;
+            GameController.Instance.player.holdState = HoldStateEnum.Nothing;
         }
     }
 
     private void Update() {
-        if(hasWater & hasFertilizer & hasSeed){
+        if(hasWater & hasFertilizer & hasSapling){
             Instantiate(treeBombPrefab,spawnPoint.position, spawnPoint.rotation);
             hasWater= false;
             hasFertilizer= false;
-            hasSeed = false;
+            hasSapling = false;
         }
     }
 }
