@@ -1,8 +1,44 @@
 fileFormatVersion: 2
-guid: 1ec29b18dfdd74644be72098d51deca5
+guid: ee07ec679ba783c4591967a76ec4b378
 ModelImporter:
   serializedVersion: 21202
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: -6632192151405588932
+    second: Animated_Seed_Leafes|Seed_V2.003Action
+  - first:
+      74: 462485400837190404
+    second: Animated_Seed_Leafes|SphereAction
+  - first:
+      74: -5642464153178251326
+    second: Animated_Seed_Leafes|SphereAction.014
+  - first:
+      74: 3669563646907021171
+    second: Animated_Seed_Leafes|SphereAction.016
+  - first:
+      74: -4234248355143953351
+    second: Animated_Seed_Leafes|SphereAction.018
+  - first:
+      74: -3178751477752013892
+    second: Animated_Seed_Leafes|SphereAction.020
+  - first:
+      74: -5070497161885918088
+    second: Animated_Seed_Leafes|SphereAction.022
+  - first:
+      74: 5111921454017434937
+    second: Animated_Seed_Leafes|SphereAction.024
+  - first:
+      74: 8483486074569673587
+    second: Animated_Seed_Leafes|SphereAction.026
+  - first:
+      74: -3898248091760678015
+    second: Animated_Seed_Leafes|SphereAction.028
+  - first:
+      74: -8850442200439486972
+    second: Animated_Seed_Leafes|SphereAction.030
+  - first:
+      74: 4111128018921548092
+    second: Animated_Seed_Leafes|Water_LiquidAction
   externalObjects: {}
   materials:
     materialImportMode: 2
