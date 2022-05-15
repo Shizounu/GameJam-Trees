@@ -22,6 +22,10 @@ public class Combiner : interactionPoint
             hasSapling  = true;
             GameController.Instance.player.holdState = HoldStateEnum.Nothing;
         }
+        if(GameController.Instance.player.holdState == HoldStateEnum.Fertilizer){
+            hasFertilizer  = true;
+            GameController.Instance.player.holdState = HoldStateEnum.Nothing;
+        }
     }
 
     private void Update() {
