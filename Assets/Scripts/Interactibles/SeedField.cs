@@ -25,10 +25,6 @@ public class SeedField : interactionPoint
     public GameObject seedVisual;
     public Animator seedAnimator;
 
-    private void OnValidate() {
-        hasSeed = _hasSeed;
-    }
-
     public override void interact(){
         if(GameController.Instance.player.holdState == HoldStateEnum.Seed){
             hasSeed = true;

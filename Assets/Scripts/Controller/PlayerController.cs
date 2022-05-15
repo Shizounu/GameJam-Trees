@@ -6,10 +6,10 @@ public enum HoldStateEnum{
     Nothing,
     Bowl,
     Water,
-    TreeBomb,
     Seed,
     Sapling,
-    Fertilizer
+    Fertilizer,
+    TreeBomb
 }
 
 [SelectionBase]
@@ -21,13 +21,21 @@ public class PlayerController : MonoBehaviour
     
     [Header("Interactable State")]
     public HoldStateEnum holdState = HoldStateEnum.Nothing;
-
-    
     
     [Header("References")]
     public Rigidbody rb;
     InputController input;
     public Transform visualTransform;
+
+    [Header("Model References")]
+    public GameObject bucketModel;
+    public GameObject waterModel;
+    public GameObject seedModel;
+    public GameObject saplingModel;
+    public GameObject fertilizerModel;
+    public GameObject SeedBombModel;
+
+
     private void Start() {
         input = InputController.Instance;
     }
@@ -40,6 +48,8 @@ public class PlayerController : MonoBehaviour
             holdState = HoldStateEnum.Nothing;
             input.clearHandFlag = false;
         }
+
+        heldItemDisplay(holdState);
     }
 
     private void FixedUpdate() {
@@ -70,6 +80,67 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    void heldItemDisplay(HoldStateEnum hold){
+        switch (hold)
+        {   
+            case HoldStateEnum.Nothing :
+                bucketModel.SetActive(false);
+                waterModel.SetActive(false);
+                seedModel.SetActive(false);
+                saplingModel.SetActive(false);
+                fertilizerModel.SetActive(false);
+                SeedBombModel.SetActive(false);
+                break;
+            case HoldStateEnum.Bowl :
+                bucketModel.SetActive(true);
+                waterModel.SetActive(false);
+                seedModel.SetActive(false);
+                saplingModel.SetActive(false);
+                fertilizerModel.SetActive(false);
+                SeedBombModel.SetActive(false);
+                break;
+            case HoldStateEnum.Water :
+                bucketModel.SetActive(false);
+                waterModel.SetActive(true);
+                seedModel.SetActive(false);
+                saplingModel.SetActive(false);
+                fertilizerModel.SetActive(false);
+                SeedBombModel.SetActive(false);
+                break;
+            case HoldStateEnum.Seed :
+                bucketModel.SetActive(false);
+                waterModel.SetActive(false);
+                seedModel.SetActive(true);
+                saplingModel.SetActive(false);
+                fertilizerModel.SetActive(false);
+                SeedBombModel.SetActive(false);
+                break;
+            case HoldStateEnum.Sapling :
+                bucketModel.SetActive(false);
+                waterModel.SetActive(false);
+                seedModel.SetActive(false);
+                saplingModel.SetActive(true);
+                fertilizerModel.SetActive(false);
+                SeedBombModel.SetActive(false);
+                break;
+            case HoldStateEnum.Fertilizer : 
+                bucketModel.SetActive(false);
+                waterModel.SetActive(false);
+                seedModel.SetActive(false);
+                saplingModel.SetActive(false);
+                fertilizerModel.SetActive(true);
+                SeedBombModel.SetActive(false);
+                break;
+            case HoldStateEnum.TreeBomb :
+                bucketModel.SetActive(false);
+                waterModel.SetActive(false);
+                seedModel.SetActive(false);
+                saplingModel.SetActive(false);
+                fertilizerModel.SetActive(false);
+                SeedBombModel.SetActive(true);
+                break;
+        }
+    }
 
     private void OnDrawGizmos() {
         interactionPoint[] interactionPoints = FindObjectsOfType<interactionPoint>();

@@ -15,4 +15,10 @@ public class GameController : MonoBehaviour
 
         player = FindObjectOfType<PlayerController>();
     }
+
+    public float remainingTime = 25f;
+
+    private void Update() {
+        remainingTime -= Time.deltaTime;
+    }
 }

@@ -10,6 +10,7 @@ public class CannonInteractible : interactionPoint
         if(GameController.Instance.player.holdState == HoldStateEnum.TreeBomb){
             boom.Play();
             GameController.Instance.player.holdState = HoldStateEnum.Nothing;
+            GameController.Instance.remainingTime += 25f;
         }
 
     }
