@@ -113,7 +113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requirmentOverride: 1
   required: 0
-  moveTo: 3
+  moveTo: 6
   destroyeAfterPickup: 1
 --- !u!1001 &1353446888539058102
 PrefabInstance:
