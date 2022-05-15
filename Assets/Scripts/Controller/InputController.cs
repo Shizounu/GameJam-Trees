@@ -25,6 +25,9 @@ public class InputController : MonoBehaviour
 
         inputActions.Player.CameraMovement.performed += ctx => mouseMovement = ctx.ReadValue<Vector2>();
         inputActions.Player.CameraMovement.canceled += ctx => mouseMovement = Vector2.zero;
+
+        inputActions.Player.Zoom.performed += ctx => zoom = ctx.ReadValue<Vector2>().normalized.y;
+        inputActions.Player.Zoom.canceled += ctx => zoom = 0;
     }
 
     private void OnEnable() {
@@ -38,6 +41,6 @@ public class InputController : MonoBehaviour
     public Vector2 dir;
     public bool interactionFlag = false;
     public bool clearHandFlag = false;
-
     public Vector2 mouseMovement;
+    public float zoom;
 }

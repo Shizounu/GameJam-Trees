@@ -6,12 +6,13 @@ public class CameraController : MonoBehaviour
 {
     [Header("Reference")]
     public Transform pivot;
-
+    public Camera cam;
     [Header("Values")]
     public Vector2 rotationMultiplier;
     public Vector2 yawLimit; //Y Axis
     public Vector2 pitchLimit; //X AXis
     [SerializeField] private Vector2 internalPosition;
+
     public void move(Vector2 dir){
         if(dir.x * Time.deltaTime * rotationMultiplier.x + internalPosition.x < pitchLimit.x | 
             dir.x * Time.deltaTime * rotationMultiplier.x + internalPosition.x > pitchLimit.y){
@@ -34,6 +35,8 @@ public class CameraController : MonoBehaviour
 
     private void LateUpdate() {
         move(InputController.Instance.mouseMovement);
+        if(cam.fieldOfView + InputController.Instance.zoom > 25 & cam.fieldOfView + InputController.Instance.zoom < 61)
+            cam.fieldOfView += InputController.Instance.zoom;
         transform.LookAt(pivot, Vector3.up);
     }
 
