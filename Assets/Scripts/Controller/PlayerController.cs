@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
     public Rigidbody rb;
     InputController input;
     public Transform visualTransform;
-
+    public Animator animator;
     [Header("Model References")]
     public GameObject bucketModel;
     public GameObject waterModel;
@@ -54,6 +54,9 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate() {
         Vector3 movement = new Vector3(input.dir.x, 0, input.dir.y) * Time.fixedDeltaTime * speed;
+        if(movement.magnitude > 0){
+            animator.SetBool("isRunning", true);
+        } else animator.SetBool("isRunning", false);
         rb.velocity = (movement) + new Vector3(0,rb.velocity.y,0);
         visualTransform.LookAt(transform.position + new Vector3(input.dir.x, 0, input.dir.y));
         
@@ -76,6 +79,7 @@ public class PlayerController : MonoBehaviour
 
         if(closestInRange != null){
             closestInRange.interact();
+            animator.SetBool("makesAction", true);
         }
 
     }

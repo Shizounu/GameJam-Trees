@@ -45,12 +45,14 @@ public class SeedField : interactionPoint
                 growTime = totalTime;
                 hasSeed = false;
                 Instantiate(saplingPrefab, spawnPosition.position,spawnPosition.rotation);
+                seedVisual.SetActive(false);
             }
         }
     }
 
 
     private void startVisualAnim(){
+        seedVisual.SetActive(true);
         seedAnimator.SetFloat("AnimSpeed", 1 / totalTime);
         seedAnimator.Play("Leaf Growing");
     }   
